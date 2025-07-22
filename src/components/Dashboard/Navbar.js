@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import Button from '../Button';
 
 const Navbar = () => {
   return (
@@ -8,33 +9,35 @@ const Navbar = () => {
         <Image
           src="/images/logo.webp"
           alt="Next.js Logo"
-          width={40}
-          height={40}
+          width={48}
+          height={48}
           priority
         />
         <div className='flex space-x-6'>
-          <Link href="/" className="text-primary-text">
-            Home
+          <Link href="/" className="font-semibold text-primary-text">
+            Inicio
           </Link>
-          <Link href="/" className="text-primary-text">
+          <Link href="/" className="font-medium text-primary-text">
             Servicios
           </Link>
-          <Link href="/" className="text-primary-text">
+          <Link href="/" className="font-medium text-primary-text">
             Quienes Somos
           </Link>
-          <Link href="/" className="text-primary-text">
+          <Link href="/" className="font-medium text-primary-text">
             Testimonios
           </Link>
-          <Link href="/" className="text-primary-text">
+          <Link href="/" className="font-medium text-primary-text">
             Preguntas Frecuentes
           </Link>
-          <Link href="/" className="text-primary-text">
+          <Link href="/" className="font-medium text-primary-text">
             Contacto
           </Link>
         </div>
         <div>
-          <Link href="/" className="font-semibold">
-            Contactanos
+          <Link href="/">
+            <Button className="">
+              Solicitar Servicio
+            </Button>
           </Link>
         </div>
       </div>
