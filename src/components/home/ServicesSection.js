@@ -4,7 +4,7 @@ import ServiceCard from "../ServiceCard";
 const ServicesSection = () => {
   return (
     <section className="bg-accent-background">
-      <div className="px-40 py-20 bg-secondary-background rounded-[56px]">
+      <div className="px-40 py-20 bg-secondary-background rounded-b-[56px]">
         <div className="flex flex-col gap-y-10">
           <div className="w-3/4 mx-auto flex flex-col gap-y-2.5">
             <h2 className="text-5xl text-center font-bold text-primary-text font-lato">
