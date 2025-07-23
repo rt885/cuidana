@@ -1,18 +1,12 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import Button from '../Button';
+import Logo from '../Logo';
 
 const Navbar = () => {
   return (
     <>
       <div className='flex items-center justify-between px-16 py-3 bg-main-background text-white'>
-        <Image
-          src="/images/logo.webp"
-          alt="Next.js Logo"
-          width={48}
-          height={48}
-          priority
-        />
+        <Logo />
         <div className='flex space-x-6'>
           <Link href="/" className="font-semibold text-primary-text">
             Inicio
