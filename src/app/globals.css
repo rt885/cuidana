@@ -8,8 +8,8 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-inter);
-  --font-secondary: var(--font-lato); /* Variable para la fuente secundaria */
+  --font-sans: var(--font-inter); /* Inter como fuente principal */
+  --font-lato: var(--font-lato); /* Lato como fuente específica */
   /* Colores de la App */
   --color-main-background: #E1EEFF;
   --color-primary-text: #023579;
@@ -28,5 +28,5 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans); /* Aplicar la fuente principal al body */
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }

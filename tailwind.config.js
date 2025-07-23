@@ -12,8 +12,8 @@ module.exports = {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        sans: ["var(--font-sans)"],
-        lato: ["var(--font-secondary)"], // Agrega la fuente secundaria
+        sans: ["var(--font-inter)", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "sans-serif"], // Inter como fuente principal
+        lato: ["var(--font-lato)", "sans-serif"], // Lato como fuente específica
       },
     },
   },
