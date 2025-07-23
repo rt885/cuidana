@@ -3,6 +3,7 @@ import StatsBanner from "@/components/Home/StatsBanner";
 import HomeVideo from "@/components/Home/HomeVideo";
 import Services from "@/components/Home/ServicesSection";
 import TestimonialSection from "@/components/TestimonialSection";
+import Benefits from "@/components/Home/Benefits";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <HomeVideo />
       <Services />
       <TestimonialSection />
+      <Benefits />
     </>
   );
 }
