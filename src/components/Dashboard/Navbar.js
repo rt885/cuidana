@@ -27,7 +27,7 @@ const Navbar = () => {
             Testimonios
           </Link>
           <Link href="/" className="font-medium text-primary-text">
-            Preguntas Frecuentes
+            FaQ
           </Link>
           <Link href="/" className="font-medium text-primary-text">
             Contacto
