@@ -14,12 +14,14 @@
   --color-main-background: #E1EEFF;
   --color-primary-text: #023579;
   --color-dark-text: #000814;
+  --color-white-text: #EFF1F0;
+  --color-primary-button: #285ED1;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #E1EEFF;
+    --foreground: #000814;
   }
 }
 
