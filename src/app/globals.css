@@ -12,6 +12,7 @@
   --font-lato: var(--font-lato); /* Lato como fuente específica */
   /* Colores de la App */
   --color-main-background: #E1EEFF;
+  --color-secondary-background: #F2F7FD;
   --color-primary-text: #023579;
   --color-dark-text: #000814;
   --color-white-text: #EFF1F0;

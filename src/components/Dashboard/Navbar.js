@@ -5,7 +5,7 @@ import Logo from '../Logo';
 const Navbar = () => {
   return (
     <>
-      <div className='flex items-center justify-between px-16 py-3 bg-main-background text-white'>
+      <div className='flex items-center justify-between px-16 py-6 bg-main-background text-white'>
         <Logo />
         <div className='flex space-x-6'>
           <Link href="/" className="font-semibold text-primary-text">

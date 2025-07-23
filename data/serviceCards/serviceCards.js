@@ -1,27 +1,65 @@
+import { CiPill, CiStethoscope, CiBandage } from "react-icons/ci";
+import { GiMedicalDrip } from "react-icons/gi";
+import { TfiWheelchair } from "react-icons/tfi";
+import { LuBath } from "react-icons/lu";
+import { PiUserList } from "react-icons/pi";
+import { MdBabyChangingStation } from "react-icons/md";
+
 export const servicesData = [
   {
     id: 1,
-    icon: "/icons/service-icon-1.svg", // Ruta a tu ícono
-    title: "Desarrollo Web",
-    description: "Creamos sitios web modernos y responsivos para potenciar tu presencia en línea."
+    icon: CiPill,
+    title: "Administración de Medicamentos",
+    description:
+      "Preparación y administración segura de medicamentos según indicaciones médicas.",
   },
   {
     id: 2,
-    icon: "/icons/service-icon-2.svg",
-    title: "Marketing Digital",
-    description: "Estrategias de SEO, SEM y redes sociales para aumentar tu visibilidad y conversiones."
+    icon: CiStethoscope,
+    title: "Monitoreo de Signos Vitales",
+    description:
+      "Control constante de presión arterial, temperatura, pulso y otros signos esenciales.",
   },
   {
     id: 3,
-    icon: "/icons/service-icon-3.svg",
-    title: "Diseño UI/UX",
-    description: "Diseñamos interfaces intuitivas y atractivas centradas en la experiencia del usuario."
+    icon: CiBandage,
+    title: "Cuidado y Curación de Heridas",
+    description:
+      "Limpieza, desinfección y vendajes para favorecer la recuperación de heridas y úlceras.",
   },
   {
     id: 4,
-    icon: "/icons/service-icon-4.svg",
-    title: "Optimización de Rendimiento",
-    description: "Mejoramos la velocidad y el rendimiento de tu sitio para una mejor experiencia."
-  }
-  // Puedes agregar más servicios aquí
+    icon: GiMedicalDrip,
+    title: "Manejo de Sondas y Catéteres",
+    description:
+      "Colocación, mantenimiento y cuidado especializado de sondas y catéteres.",
+  },
+  {
+    id: 5,
+    icon: TfiWheelchair,
+    title: "Asistencia en la Movilización",
+    description:
+      "Apoyo para desplazamientos y cambios de posición, evitando complicaciones por inmovilidad.",
+  },
+  {
+    id: 6,
+    icon: LuBath,
+    title: "Higiene Personal del Paciente",
+    description:
+      "Ayuda en el aseo, baño y cuidado diario para mantener la dignidad y bienestar del paciente.",
+  },
+  {
+    id: 7,
+    icon: PiUserList,
+    title: "Registro de Evolución del Pacienete",
+    description:
+      "Documentación detallada del progreso y cambios en la salud para un seguimiento efectivo.",
+  },
+  {
+    id: 8,
+    icon: MdBabyChangingStation,
+    title: "Cuidados de Recién Nacidos",
+    description:
+      "Atención profesional para el bienestar y salud del recién nacido en casa.",
+  },
 ];
