@@ -1,6 +1,7 @@
 import Hero from "@/components/Home/Hero";
 import StatsBanner from "@/components/Home/StatsBanner";
 import HomeVideo from "@/components/Home/HomeVideo";
+import Services from "@/components/Home/ServicesSection";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <StatsBanner />
       <HomeVideo />
+      <Services />
     </>
   );
 }
