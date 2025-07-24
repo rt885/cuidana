@@ -23,7 +23,7 @@ const Benefits = () => {
             <h4 className="text-primary-text font-lato text-4xl font-bold">
               Atención 100% Segura
             </h4>
-            <p className="text-xl">
+            <p className="text-xl leading-tight">
               Solo personal de enfermería certificado y validada
             </p>
           </div>
@@ -37,7 +37,7 @@ const Benefits = () => {
             <h4 className="text-primary-text font-lato text-4xl font-bold text-center">
               Flexibilidad Total
             </h4>
-            <p className="text-xl text-center">
+            <p className="text-xl leading-tight text-center">
               Sin mínimos de días, tú eliges cuándo y cuánto
             </p>
           </div>
@@ -51,7 +51,7 @@ const Benefits = () => {
             <h4 className="text-primary-text font-lato text-4xl font-bold">
               Atención Inmediata
             </h4>
-            <p>Disponibilidad rápida cuando más lo necesitas</p>
+            <p className="leading-tight">Disponibilidad rápida cuando más lo necesitas</p>
           </div>
         </div>
 
@@ -63,7 +63,7 @@ const Benefits = () => {
             <h4 className="text-primary-text font-lato text-4xl font-bold">
               Precios Claros
             </h4>
-            <p>
+            <p className="leading-tight">
               Conoce el costo de cada servicio desde el principio, sin cargos
               ocultos.
             </p>
@@ -78,7 +78,7 @@ const Benefits = () => {
             <h4 className="text-primary-text font-lato text-4xl font-bold">
               Consulta Directa
             </h4>
-            <p>Seguimiento y soporte personalizado</p>
+            <p className="leading-tight">Seguimiento y soporte personalizado</p>
           </div>
         </div>
 
@@ -90,7 +90,7 @@ const Benefits = () => {
             <h4 className="text-primary-text font-lato text-4xl font-bold">
               Solicitud Digital Fácil y Rápida
             </h4>
-            <p className="text-xl">
+            <p className="text-xl leading-tight">
               Pide tu enfermera a domicilio en pocos pasos, sin complicaciones.
             </p>
           </div>
