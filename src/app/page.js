@@ -1,12 +1,12 @@
-import Hero from "../components/Home/Hero";
-import StatsBanner from "../components/Home/StatsBanner";
-import HomeVideo from "../components/Home/HomeVideo";
-import Services from "../components/Home/ServicesSection";
+import Hero from "../components/home/Hero";
+import StatsBanner from "../components/home/StatsBanner";
+import HomeVideo from "../components/home/HomeVideo";
+import Services from "../components/home/ServicesSection";
 import TestimonialSection from "../components/TestimonialSection";
-import Benefits from "../components/Home/Benefits";
-import HowItWorks from "../components/Home/HowItWorks";
-import InitialForm from "../components/Home/InitialForm";
-import FaQSection from "../components/Home/FaQSection";
+import Benefits from "../components/home/Benefits";
+import HowItWorks from "../components/home/HowItWorks";
+import InitialForm from "../components/home/InitialForm";
+import FaQSection from "../components/home/FaQSection";
 import CloseBanner from "../components/CloseBanner";
 
 export default function Home() {
