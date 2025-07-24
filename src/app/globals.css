@@ -33,3 +33,36 @@ body {
   color: var(--foreground);
   font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
+
+/* Swiper Custom Styles */
+.testimonial-swiper {
+  padding-bottom: 50px !important;
+}
+
+/* Pagination bullets */
+.testimonial-swiper .swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.5) !important;
+  opacity: 1 !important;
+  width: 12px !important;
+  height: 12px !important;
+}
+
+.testimonial-swiper .swiper-pagination-bullet-active {
+  background: white !important;
+  transform: scale(1.2) !important;
+}
+
+/* Hide default navigation buttons */
+.testimonial-swiper .swiper-button-next,
+.testimonial-swiper .swiper-button-prev {
+  display: none !important;
+}
+
+/* Custom animation for slides */
+.testimonial-swiper .swiper-slide {
+  transition: transform 0.3s ease !important;
+}
+
+.testimonial-swiper .swiper-slide:hover {
+  transform: translateY(-5px) !important;
+}
