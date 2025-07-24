@@ -6,6 +6,7 @@ import TestimonialSection from "@/components/TestimonialSection";
 import Benefits from "@/components/Home/Benefits";
 import HowItWorks from "@/components/Home/HowItWorks";
 import InitialForm from "@/components/Home/InitialForm";
+import FaQSection from "@/components/Home/FaQSection";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Benefits />
       <HowItWorks />
       <InitialForm />
+      <FaQSection />
     </>
   );
 }
