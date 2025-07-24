@@ -18,6 +18,7 @@
   --color-dark-text: #000814;
   --color-white-text: #EFF1F0;
   --color-primary-button: #285ED1;
+  --color-primary-blue: #285ED1;
 }
 
 @media (prefers-color-scheme: dark) {
