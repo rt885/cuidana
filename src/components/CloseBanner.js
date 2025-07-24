@@ -193,7 +193,7 @@ const CloseBanner = () => {
 
       {/* Overlay principal animado */}
       <motion.div 
-        className="absolute inset-0 bg-black/50 flex items-center justify-center rounded-t-[56px] relative"
+        className="absolute inset-0 bg-black/50 flex items-center justify-center rounded-t-[56px]"
         variants={overlayVariants}
       >
         {/* Efecto de brillo que cruza el banner */}
