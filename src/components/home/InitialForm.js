@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Button from "../Button";
@@ -57,9 +57,9 @@ const InitialForm = () => {
   };
 
   return (
-    <section className="bg-main-background px-40 py-20">
+    <section className="bg-secondary-background px-40 py-20">
       <div className="max-w-2xl mx-auto">
-        <div className="bg-white rounded-2xl shadow-lg p-8">
+        <div className="bg-primary-background rounded-2xl shadow-lg p-8">
           <div className="text-center mb-8">
             <h2 className="text-4xl font-bold text-primary-text font-lato mb-4">
               Comienza tu Solicitud
