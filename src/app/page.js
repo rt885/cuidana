@@ -5,6 +5,7 @@ import Services from "@/components/Home/ServicesSection";
 import TestimonialSection from "@/components/TestimonialSection";
 import Benefits from "@/components/Home/Benefits";
 import HowItWorks from "@/components/Home/HowItWorks";
+import InitialForm from "@/components/Home/InitialForm";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <TestimonialSection />
       <Benefits />
       <HowItWorks />
+      <InitialForm />
     </>
   );
 }
