@@ -96,7 +96,7 @@ const Hero = () => {
 
   return (
     <motion.main 
-      className="grid lg:grid-cols-2 lg:px-[120px] pt-20 gap-x-8 overflow-hidden"
+      className="grid lg:grid-cols-2 lg:px-[120px] pt-20 gap-x-8 overflow-hidden bg-main-background"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
