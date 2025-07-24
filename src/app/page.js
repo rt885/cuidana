@@ -7,6 +7,7 @@ import Benefits from "@/components/Home/Benefits";
 import HowItWorks from "@/components/Home/HowItWorks";
 import InitialForm from "@/components/Home/InitialForm";
 import FaQSection from "@/components/Home/FaQSection";
+import CloseBanner from "@/components/CloseBanner";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       <HowItWorks />
       <InitialForm />
       <FaQSection />
+      <CloseBanner />
     </>
   );
 }
