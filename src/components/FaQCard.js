@@ -15,7 +15,7 @@ const FaQCard = ({ id, question, answer, isOpen, onClick }) => {
 
   return (
     <li
-      className={`bg-white rounded-lg shadow-md border-2 overflow-hidden transition-all duration-300 hover:shadow-lg ${
+      className={`bg-secondary-background rounded-lg shadow-md border-2 overflow-hidden transition-all duration-300 hover:shadow-lg ${
         isOpen ? "border-primary-blue" : "border-gray-200"
       }`}
     >

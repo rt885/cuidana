@@ -15,9 +15,9 @@ const FaQSection = () => {
   };
 
   return (
-    <div className="bg-secondary-background px-40 py-20">
-      <div className="max-w-2xl mx-auto">
-        <h2 className="text-4xl font-bold text-primary-text font-lato mb-8">
+    <div className="bg-main-background px-40 py-20">
+      <div className="w-full mx-auto px-48 bg-secondary-background rounded-[56px] py-12 shadow-lg">
+        <h2 className="text-5xl font-bold text-primary-text font-lato mb-8">
           Preguntas Frecuentes
         </h2>
         <ul className="space-y-4">
