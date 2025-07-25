@@ -230,7 +230,7 @@ const TestimonialSlider = () => {
           variants={containerVariants}
         >
           <motion.h2
-            className="text-4xl font-bold text-center mb-12 text-white-text font-lato"
+            className="text-3xl md:text-4xl lg:text-5xl font-lato font-bold text-center mb-12 text-white-text"
             variants={titleVariants}
             whileHover={{
               scale: 1.02,
@@ -245,6 +245,7 @@ const TestimonialSlider = () => {
             <Swiper
               modules={[Navigation, Pagination, Autoplay]}
               spaceBetween={30}
+              loop={true}
               slidesPerView={1}
               navigation={{
                 nextEl: ".swiper-button-next-custom",
