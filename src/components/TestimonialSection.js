@@ -138,7 +138,7 @@ const TestimonialSlider = () => {
   };
 
   return (
-    <section className="bg-secondary-background relative overflow-hidden">
+    <section className="bg-main-background relative overflow-hidden">
       {/* Elementos de fondo animados */}
       <motion.div
         className="absolute top-10 left-10 w-24 h-24 bg-white opacity-5 rounded-full"

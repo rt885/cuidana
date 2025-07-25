@@ -173,7 +173,7 @@ const InitialForm = () => {
   };
 
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative overflow-hidden bg-main-background">
       {/* Elementos decorativos de fondo */}
       <motion.div
         className="absolute top-20 left-16 w-32 h-32 bg-primary-blue opacity-4 rounded-full"
