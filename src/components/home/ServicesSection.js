@@ -75,20 +75,20 @@ const ServicesSlider = () => {
   return (
     <section className="bg-accent-background overflow-hidden">
       <motion.div
-        className="px-40 py-20 bg-secondary-background rounded-b-[56px]"
+        className="py-10 px-5 md:py-16 md:px-8 lg:px-40 lg:py-20 bg-secondary-background rounded-b-4xl md:rounded-b-[56px]"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
         variants={containerVariants}
       >
-        <div className="flex flex-col gap-y-10">
+        <div className="flex flex-col gap-y-5 md:gap-y-10">
           {/* Header animado */}
           <motion.div
-            className="w-3/4 mx-auto flex flex-col gap-y-2.5"
+            className="md:w-3/4 mx-auto flex flex-col gap-y-2.5"
             variants={headerVariants}
           >
             <motion.h2
-              className="text-5xl text-center font-bold text-primary-text font-lato"
+              className="text-4xl lg:text-5xl text-center leading-none font-bold text-primary-text font-lato"
               variants={headerVariants}
             >
               Nuestros Servicios de Enfermería a Domicilio
@@ -105,6 +105,7 @@ const ServicesSlider = () => {
               spaceBetween={20}
               slidesPerView={1.2}
               centeredSlides={true}
+              loop={true}
               autoplay={{
                 delay: 3000,
                 disableOnInteraction: false,
