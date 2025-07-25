@@ -122,7 +122,7 @@ const StatsBanner = () => {
   return (
     <motion.section 
       ref={containerRef}
-      className="bg-accent-background text-white-text lg:px-[360px] lg:py-3 flex justify-between items-center gap-4 relative overflow-hidden"
+      className="bg-accent-background text-white-text lg:px-[360px] py-6 px-5 md:py-8 md:px-24 lg:py-3 flex justify-between items-center gap-4 relative overflow-hidden"
       variants={containerVariants}
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
@@ -177,7 +177,7 @@ const StatsBanner = () => {
 
           {/* Número principal */}
           <motion.p 
-            className="font-lato text-[64px] relative z-10"
+            className="font-lato font-bold text-5xl md:text-[64px] relative z-10"
             variants={numberVariants}
             whileHover={{
               textShadow: "0 0 20px rgba(255,255,255,0.5)",
@@ -197,7 +197,7 @@ const StatsBanner = () => {
 
           {/* Texto descriptivo */}
           <motion.span 
-            className="text-sm md:text-base text-center px-2"
+            className="text-sm md:text-base text-center px-2 leading-none"
             variants={textVariants}
           >
             {stat.text}
