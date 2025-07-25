@@ -216,7 +216,7 @@ const HowItWorks = () => {
         transition={{ duration: 1, delay: 2 }}
       />
 
-      <div className="bg-main-background px-40 py-20 grid lg:grid-cols-2 gap-x-20 rounded-b-[56px] relative z-10">
+      <div className="bg-main-background py-10 px-5 md:py-16 md:px-8 lg:px-40 lg:py-20 grid lg:grid-cols-2 gap-x-20 rounded-b-4xl md:rounded-b-[56px] relative z-10">
         <motion.div 
           className="flex flex-col gap-y-10 my-auto"
           initial="hidden"
