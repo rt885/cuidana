@@ -96,19 +96,19 @@ const Hero = () => {
 
   return (
     <motion.main 
-      className="grid lg:grid-cols-2 lg:px-[120px] pt-20 gap-x-8 overflow-hidden bg-main-background"
+      className="flex flex-col lg:grid lg:grid-cols-2 lg:px-[120px] pt-6 px-5 md:pt-8 md:px-8 lg:pt-20 gap-y-10 lg:gap-x-8 overflow-hidden lg:bg-main-background"
       variants={containerVariants}
       initial="hidden"
       animate="visible"
     >
       {/* Contenido de texto */}
       <motion.div 
-        className="flex flex-col  gap-4"
+        className="flex flex-col gap-4"
         variants={slideInLeft}
       >
         <div className="flex flex-col gap-2.5">
           <motion.h1 
-            className="text-primary-text text-5xl font-lato font-bold"
+            className="text-primary-text leading-none text-4xl md:text-5xl font-lato font-bold"
             variants={titleVariants}
           >
             Cuidado de Enfermería en Casa: Bienestar para Pacientes,
@@ -138,7 +138,7 @@ const Hero = () => {
 
       {/* Imagen con efecto parallax y hover */}
       <motion.div 
-        className="relative"
+        className="relative h-fit lg:h-auto"
         variants={slideInRight}
       >
         {/* Elemento decorativo de fondo */}
