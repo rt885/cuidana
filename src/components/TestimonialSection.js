@@ -198,7 +198,7 @@ const TestimonialSlider = () => {
         }}
       />
 
-      <div className="bg-accent-background py-16 rounded-b-[56px] relative z-10">
+      <div className="bg-accent-background py-16 rounded-b-4xl md:rounded-b-[56px] relative z-10">
         {/* Partículas flotantes dentro del contenedor */}
         {[...Array(8)].map((_, index) => (
           <motion.div
