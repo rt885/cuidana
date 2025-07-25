@@ -103,7 +103,7 @@ const Hero = () => {
     >
       {/* Contenido de texto */}
       <motion.div 
-        className="flex flex-col justify-center gap-4"
+        className="flex flex-col  gap-4"
         variants={slideInLeft}
       >
         <div className="flex flex-col gap-2.5">

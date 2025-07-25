@@ -164,7 +164,7 @@ const MultiStepForm = () => {
         return (
           <div className="space-y-6">
             <h2 className="text-3xl font-bold text-primary-text font-lato text-center mb-8">
-              ¿Dónde se brindará el servicio?
+              Ubicación donde se brindará el servicio
             </h2>
             <div className="space-y-4">
               <input
