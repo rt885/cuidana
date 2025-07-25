@@ -241,7 +241,7 @@ const InitialForm = () => {
         />
       ))}
 
-      <div className="bg-secondary-background px-40 py-20 rounded-b-[56px] relative z-10">
+      <div className="bg-secondary-background py-10 px-5 md:py-16 md:px-8 lg:px-40 lg:py-20 rounded-b-4xl md:rounded-b-[56px] relative z-10">
         <motion.div 
           className="max-w-2xl mx-auto"
           initial="hidden"
