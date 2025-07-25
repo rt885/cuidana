@@ -116,16 +116,15 @@ const Benefits = () => {
       descClass: "text-base sm:text-lg lg:text-xl leading-tight text-center",
       isVertical: true
     },
-    {
+   {
       id: 3,
       icon: RxLightningBolt,
       title: "Atención Inmediata",
       description: "Disponibilidad rápida cuando más lo necesitas",
-      gridClass: "col-span-1 sm:col-span-1 lg:row-start-2 flex flex-col justify-center gap-y-3 sm:gap-y-4 lg:gap-y-5 bg-secondary-background p-4 sm:p-5 lg:p-6 rounded-2xl",
-      iconClass: "h-14 w-14 sm:h-16 sm:w-16 lg:h-28 lg:w-28 text-primary-blue",
-      titleClass: "text-primary-text font-lato text-xl sm:text-2xl lg:text-4xl font-bold text-center",
-      descClass: "text-base sm:text-lg lg:text-xl leading-tight text-center",
-      isVertical: true
+      gridClass: "col-span-1 sm:col-span-1 lg:row-start-2 flex flex-col md:justify-center md:items-center lg:flex-row gap-x-0 sm:gap-x-2.5 md:gap-y-3 lg:gap-x-2.5 gap-y-3 sm:gap-y-0 lg:gap-y-0 bg-secondary-background p-3 sm:p-3 lg:p-3 rounded-2xl",
+      iconClass: "h-16 w-16 sm:h-20 sm:w-20 lg:h-28 lg:w-28 text-primary-blue",
+      titleClass: "text-primary-text font-lato text-lg sm:text-2xl lg:text-4xl font-bold text-center sm:text-left md:text-center lg:text-left",
+      descClass: "leading-tight text-sm sm:text-lg lg:text-base text-center sm:text-left md:text-center lg:text-left"
     },
     {
       id: 4,
