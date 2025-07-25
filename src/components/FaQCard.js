@@ -88,12 +88,12 @@ const FaQCard = ({ id, question, answer, isOpen, onClick }) => {
       whileInView="visible"
       viewport={{ once: true }}
       whileHover={{ 
-        scale: 1.02,
+        scale: 1.01,
         boxShadow: "0 8px 30px rgba(0,0,0,0.1)",
         borderColor: isOpen ? "#285ED1" : "#CBD5E0",
         transition: { duration: 0.3 }
       }}
-      whileTap={{ scale: 0.98 }}
+      whileTap={{ scale: 0.99 }}
       layout
     >
       {/* Efecto de brillo en hover */}
@@ -120,10 +120,10 @@ const FaQCard = ({ id, question, answer, isOpen, onClick }) => {
         style={{ originY: 0 }}
       />
 
-      {/* Botón de la pregunta */}
+      {/* Botón de la pregunta responsive */}
       <motion.button
         onClick={onClick}
-        className={`w-full px-6 py-5 text-left focus:outline-none focus:ring-2 focus:ring-primary-blue focus:ring-opacity-50 relative z-10 ${
+        className={`w-full px-4 sm:px-6 py-4 sm:py-5 text-left focus:outline-none focus:ring-2 focus:ring-primary-blue focus:ring-opacity-50 relative z-10 ${
           isOpen ? "bg-blue-50" : ""
         }`}
         aria-expanded={isOpen}
@@ -134,9 +134,9 @@ const FaQCard = ({ id, question, answer, isOpen, onClick }) => {
           transition: { duration: 0.2 }
         }}
       >
-        <div className="flex items-center justify-between">
+        <div className="flex items-start sm:items-center justify-between gap-3 sm:gap-4">
           <motion.h3
-            className="text-xl font-semibold font-lato pr-4"
+            className="text-lg sm:text-xl font-semibold font-lato leading-tight flex-1"
             variants={questionVariants}
             animate={isOpen ? "open" : "closed"}
             whileHover={{
@@ -148,7 +148,7 @@ const FaQCard = ({ id, question, answer, isOpen, onClick }) => {
           </motion.h3>
           
           <motion.div 
-            className="flex-shrink-0 relative"
+            className="flex-shrink-0 relative mt-1 sm:mt-0"
             variants={iconVariants}
             animate={isOpen ? "open" : "closed"}
             whileHover={{ 
@@ -179,7 +179,7 @@ const FaQCard = ({ id, question, answer, isOpen, onClick }) => {
                   exit={{ rotate: 90, opacity: 0 }}
                   transition={{ duration: 0.2 }}
                 >
-                  <FaMinusCircle className="w-6 h-6 text-primary-blue relative z-10" />
+                  <FaMinusCircle className="w-5 h-5 sm:w-6 sm:h-6 text-primary-blue relative z-10" />
                 </motion.div>
               ) : (
                 <motion.div
@@ -189,18 +189,18 @@ const FaQCard = ({ id, question, answer, isOpen, onClick }) => {
                   exit={{ rotate: -90, opacity: 0 }}
                   transition={{ duration: 0.2 }}
                 >
-                  <FaPlusCircle className="w-6 h-6 text-primary-blue relative z-10" />
+                  <FaPlusCircle className="w-5 h-5 sm:w-6 sm:h-6 text-primary-blue relative z-10" />
                 </motion.div>
               )}
             </AnimatePresence>
           </motion.div>
         </div>
 
-        {/* Partículas decorativas */}
+        {/* Partículas decorativas responsive */}
         {isOpen && [...Array(3)].map((_, index) => (
           <motion.div
             key={index}
-            className="absolute w-1 h-1 bg-primary-blue rounded-full opacity-40"
+            className="absolute w-0.5 sm:w-1 h-0.5 sm:h-1 bg-primary-blue rounded-full opacity-40"
             style={{
               top: `${30 + index * 20}%`,
               right: `${15 + index * 10}%`
@@ -220,7 +220,7 @@ const FaQCard = ({ id, question, answer, isOpen, onClick }) => {
         ))}
       </motion.button>
 
-      {/* Contenido de la respuesta */}
+      {/* Contenido de la respuesta responsive */}
       <motion.div
         ref={contentRef}
         id={`faq-answer-${id}`}
@@ -237,21 +237,21 @@ const FaQCard = ({ id, question, answer, isOpen, onClick }) => {
         <AnimatePresence>
           {isOpen && (
             <motion.div 
-              className="px-6 pb-5"
+              className="px-4 sm:px-6 pb-4 sm:pb-5"
               variants={contentVariants}
               initial="closed"
               animate="open"
               exit="closed"
             >
               <motion.div 
-                className="border-t border-gray-200 pt-4 relative"
+                className="border-t border-gray-200 pt-3 sm:pt-4 relative"
                 initial={{ scaleX: 0 }}
                 animate={{ scaleX: 1 }}
                 transition={{ duration: 0.4, delay: 0.1 }}
                 style={{ originX: 0 }}
               >
                 <motion.p 
-                  className="text-gray-700 leading-relaxed relative z-10"
+                  className="text-gray-700 leading-relaxed relative z-10 text-sm sm:text-base"
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.3, delay: 0.2 }}
@@ -263,9 +263,9 @@ const FaQCard = ({ id, question, answer, isOpen, onClick }) => {
                   {answer}
                 </motion.p>
 
-                {/* Elementos decorativos en el contenido */}
+                {/* Elementos decorativos en el contenido responsive */}
                 <motion.div
-                  className="absolute -left-2 top-2 w-2 h-2 bg-primary-blue rounded-full opacity-30"
+                  className="absolute -left-1 sm:-left-2 top-1 sm:top-2 w-1 sm:w-2 h-1 sm:h-2 bg-primary-blue rounded-full opacity-30"
                   animate={{
                     scale: [1, 1.2, 1],
                     opacity: [0.3, 0.6, 0.3]
@@ -278,7 +278,7 @@ const FaQCard = ({ id, question, answer, isOpen, onClick }) => {
                 />
 
                 <motion.div
-                  className="absolute -right-1 bottom-2 w-1.5 h-1.5 bg-accent-background rounded-full opacity-40"
+                  className="absolute -right-0.5 sm:-right-1 bottom-1 sm:bottom-2 w-1 sm:w-1.5 h-1 sm:h-1.5 bg-accent-background rounded-full opacity-40"
                   animate={{
                     scale: [1, 1.3, 1],
                     opacity: [0.4, 0.7, 0.4]
