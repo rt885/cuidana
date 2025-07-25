@@ -241,7 +241,7 @@ const HowItWorks = () => {
               ¿Cómo Funciona? Atención de Enfermería en Casa en 3 Pasos Sencillos
             </motion.h2>
             <motion.p 
-              className="leading-tight"
+              className="leading-tight hidden lg:block"
               variants={descriptionVariants}
             >
               Descubre lo sencillo que es recibir atención profesional y
@@ -320,7 +320,7 @@ const HowItWorks = () => {
         </motion.div>
 
         <motion.div 
-          className="flex flex-col gap-y-10"
+          className="flex flex-col lg:gap-y-10"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
